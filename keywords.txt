@@ -1,0 +1,6 @@
+TempSense	KEYWORD1
+getTempF	KEYWORD2
+getTempC	KEYWORD2
+setTrigger	KEYWORD2
+setReset	KEYWORD2
+getConfig	KEYWORD2
