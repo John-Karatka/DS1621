@@ -34,8 +34,8 @@
 #include "DS1621.h"
 #include <Wire.h>
 
-#define StartConvertion 0xEE
-#define StopConvertion 0x22
+#define StartConversion 0xEE
+#define StopConversion 0x22
 #define GetTemperature 0xAA
 #define TemperatureHigh 0xA1
 #define TemperatureLow 0xA2
@@ -68,16 +68,16 @@ void TempSense::updateTemp() {
 	Wire.beginTransmission(address);
 
 	#if ARDUINO >= 100
-		Wire.write(StartConvertion);
+		Wire.write(StartConversion);
 	#else
-		Wire.send(StartConvertion);
+		Wire.send(StartConversion);
 	#endif
 
 	Wire.endTransmission();
 	Wire.beginTransmission(address);
 
 	#if ARDUINO >= 100
-		Wire.write(StopConvertion);
+		Wire.write(StopConversion);
 	#else
 		Wire.send(StopConversion);
 	#endif
