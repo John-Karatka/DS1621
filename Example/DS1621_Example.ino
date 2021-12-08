@@ -11,7 +11,7 @@ Serial.begin(9600);
 }
 
 void loop() {
-signed int temperature = tmp.getTempF;
+signed int temperature = tmp.getTempF();
 
 Serial.println(temperature);
 delay(1000);
