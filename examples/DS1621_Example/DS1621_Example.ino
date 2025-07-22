@@ -7,7 +7,7 @@ TempSense tmp(address);
 
 void setup() {
 Wire.begin();
-Serial.begin(9600);
+Serial.begin(115200);
 }
 
 void loop() {
